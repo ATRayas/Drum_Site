@@ -8,6 +8,8 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
 
         makeSoundSwitch(buttonInnerHTML);    
 
+        buttonAni(buttonInnerHTML);
+
     });
 
 
@@ -17,8 +19,18 @@ document.addEventListener("keypress", function(event) {
 
     console.log(event.key);
     makeSoundSwitch(event.key);  
+    buttonAni(event.key);
 
 })
+
+function buttonAni(key) {
+     var actuveBtn = document.querySelector("." + key);
+     actuveBtn.classList.add("pressed");
+
+     setTimeout(function(){
+        actuveBtn.classList.remove("pressed");
+     }, 100);
+}
 
 function makeSoundSwitch(a) {
     switch (a) {
