@@ -1,5 +1,7 @@
 # Drum_Site
-Simple website that utilizes JavaScript to play drum instruments and was made by following a udemy course
+Simple website that utilizes JavaScript to play drum instruments.
+
+Tech: HTML, CSS, JavaScript Year: 2019
 
 https://atrayas.github.io/Drum_Site/
 
